@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Favourite</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial;
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 18px;
+      margin: 10px;
+    }
+
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Is Tiya ur Fav Prsn?</h1>
+
+  <!-- YES = link -->
+  <a href="page2.html">
+    <button>Yes</button>
+  </a>
+
+  <!-- NO = bhaagne wala -->
+  <button id="no">No</button>
+
+  <script>
+    const no = document.getElementById("no");
+    no.onmouseover = function () {
+      no.style.left = Math.random() * 300 + "px";
+      no.style.top = Math.random() * 300 + "px";
+    };
+  </script>
+
+</body>
+</html>
